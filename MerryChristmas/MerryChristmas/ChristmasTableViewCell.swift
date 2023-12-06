@@ -9,6 +9,10 @@ import UIKit
 
 class ChristmasTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imgView: UIImageView!
+    
+    @IBOutlet weak var lblChristmas: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
