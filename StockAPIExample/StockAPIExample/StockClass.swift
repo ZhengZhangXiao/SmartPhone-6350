@@ -8,7 +8,8 @@
 import Foundation
 
 class StockClass {
-    var symbol: String = ""
-    var price: Float = 0.0
-    var volume: Int = 0
+    var cityCode: String = ""
+    var city: String = ""
+    var temperature: Int = 0
+    var conditions: String = ""
 }

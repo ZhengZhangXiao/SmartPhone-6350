@@ -7,5 +7,5 @@
 
 import Foundation
 
-let baseURL = "https://financialmodelingprep.com/api/v3/quote-short/"
-let apiKey = "713148f2eca9d4d12eadbf78dfd7bf50"
+let baseURL = "https://us-central1-fir-api-s-8d31b.cloudfunctions.net/"
+let apiKey = "app"

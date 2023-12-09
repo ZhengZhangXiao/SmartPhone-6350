@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="height" constant="35" id="vNz-A0-xbN"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Get Stock Values"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Weather"/>
                                 <connections>
                                     <action selector="getStockValues:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rck-dF-3Az"/>
                                 </connections>

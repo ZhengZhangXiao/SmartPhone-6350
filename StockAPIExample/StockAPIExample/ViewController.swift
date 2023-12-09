@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
    
     
     var stockValues: [StockClass] = [StockClass]()
-    var stockNames = ["AAPL","MSFT", "META", "GOOG","AMZN"]
+    var stockNames = ["SEA","SFO", "PDX", "NYC","MIA"]
     
     @IBOutlet weak var tblView: UITableView!
     override func viewDidLoad() {
@@ -30,9 +30,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             stocks.append("\(stock),")
         }
         let stocksStr = stocks.dropLast()
-        let url = "\(baseURL)\(stocksStr)?apikey=\(apiKey)"
+        let url = "https://us-central1-fir-api-s-8d31b.cloudfunctions.net/app"
         print(url)
-        SwiftSpinner.show("Getting Stock Values")
+        SwiftSpinner.show("Getting Weathers")
         AF.request(url).responseJSON { response in
             SwiftSpinner.hide()
             if response.error != nil {
@@ -44,15 +44,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             self.stockValues = [StockClass]()
             for stockJSON in jsonArray {
-                print("Stock : \(stockJSON)")
-                let symbol = stockJSON["symbol"].stringValue
-                let price = stockJSON["price"].floatValue
-                let volume = stockJSON["volume"].intValue
+                print("Weather : \(stockJSON)")
+                let cityCode = stockJSON["cityCode"].stringValue
+                let city = stockJSON["city"].stringValue
+                let temperature = stockJSON["temperature"].intValue
+                let conditions = stockJSON["conditions"].stringValue
                 
                 let stockClass = StockClass()
-                stockClass.symbol = symbol
-                stockClass.price = price
-                stockClass.volume = volume
+                stockClass.cityCode = cityCode
+                stockClass.city = city
+                stockClass.temperature = temperature
+                stockClass.conditions = conditions
                 self.stockValues.append(stockClass)
             }
             self.tblView.reloadData()
@@ -67,9 +69,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let symbol = stockValues[indexPath.row].symbol
-        let price = stockValues[indexPath.row].price
-        cell.textLabel?.text = "Symbol: \(symbol) Price: \(price)"
+        let city = stockValues[indexPath.row].city
+        let temperature = stockValues[indexPath.row].temperature
+        let conditions = stockValues[indexPath.row].conditions
+        cell.textLabel?.text = "City: \(city) Temperature: \(temperature) Conditions: \(conditions) "
         return cell
     }
     

@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		17520D4BF66990FDE5095203 /* Pods_StockAPIExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockAPIExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		216536B41A87B2A5A0F51783 /* Pods-StockAPIExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockAPIExample.debug.xcconfig"; path = "Target Support Files/Pods-StockAPIExample/Pods-StockAPIExample.debug.xcconfig"; sourceTree = "<group>"; };
-		746012DB2B2147E500E408CE /* StockAPIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockAPIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		746012DB2B2147E500E408CE /* WeatherAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		746012DE2B2147E500E408CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		746012E02B2147E500E408CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		746012E22B2147E500E408CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		746012DC2B2147E500E408CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				746012DB2B2147E500E408CE /* StockAPIExample.app */,
+				746012DB2B2147E500E408CE /* WeatherAPI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		746012DA2B2147E500E408CE /* StockAPIExample */ = {
+		746012DA2B2147E500E408CE /* WeatherAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 746012EF2B2147E700E408CE /* Build configuration list for PBXNativeTarget "StockAPIExample" */;
+			buildConfigurationList = 746012EF2B2147E700E408CE /* Build configuration list for PBXNativeTarget "WeatherAPI" */;
 			buildPhases = (
 				1CA27F964EFBCF1521755F7D /* [CP] Check Pods Manifest.lock */,
 				746012D72B2147E500E408CE /* Sources */,
@@ -114,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = StockAPIExample;
+			name = WeatherAPI;
 			productName = StockAPIExample;
-			productReference = 746012DB2B2147E500E408CE /* StockAPIExample.app */;
+			productReference = 746012DB2B2147E500E408CE /* WeatherAPI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 746012D62B2147E500E408CE /* Build configuration list for PBXProject "StockAPIExample" */;
+			buildConfigurationList = 746012D62B2147E500E408CE /* Build configuration list for PBXProject "WeatherAPI" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				746012DA2B2147E500E408CE /* StockAPIExample */,
+				746012DA2B2147E500E408CE /* WeatherAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -420,7 +420,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		746012D62B2147E500E408CE /* Build configuration list for PBXProject "StockAPIExample" */ = {
+		746012D62B2147E500E408CE /* Build configuration list for PBXProject "WeatherAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				746012ED2B2147E700E408CE /* Debug */,
@@ -429,7 +429,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		746012EF2B2147E700E408CE /* Build configuration list for PBXNativeTarget "StockAPIExample" */ = {
+		746012EF2B2147E700E408CE /* Build configuration list for PBXNativeTarget "WeatherAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				746012F02B2147E700E408CE /* Debug */,

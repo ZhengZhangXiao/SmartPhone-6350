@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:StockAPIExample.xcodeproj">
+      location = "group:/Users/eviezheng/Documents/GitHub/SmartPhone-6350/StockAPIExample/WeatherAPI.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
